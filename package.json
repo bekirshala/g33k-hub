@@ -1,0 +1,28 @@
+{
+  "name": "g33k-hub",
+  "version": "1.0.0",
+  "description": "Coding from Mockup to Html and css responsive",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.2",
+    "update": "^0.7.4"
+  },
+  "devDependencies": {
+    "gulp-image": "^4.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bekirshala/g33k-hub.git"
+  },
+  "author": "Bekir Shala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bekirshala/g33k-hub/issues"
+  },
+  "homepage": "https://github.com/bekirshala/g33k-hub#readme"
+}

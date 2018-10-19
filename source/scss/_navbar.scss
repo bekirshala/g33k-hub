@@ -1,0 +1,19 @@
+#main-menu {
+    padding: 20px 15px;
+    background-color: transparent;
+    #logo {
+        width: 150px;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                color: $white;
+                font-size: 14px;
+                text-transform: uppercase;
+                letter-spacing: 0.2px;
+                padding-right: .7rem;
+                padding-left: .7rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* Main footer */ 
+
+#footer {
+    background: $footer;
+    p {
+        color: $footer-text;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 24px;
+    } 
+    .company-info {
+        text-transform: initial;
+    }
+}
+
+.main-footer {
+    padding-top:30px;
+    padding-bottom:30px;
+    img {
+    width:130px;
+    }
+}
+
+.sub-footer {
+    background: $sub-footer;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
