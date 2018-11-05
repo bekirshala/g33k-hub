@@ -9,12 +9,6 @@ h1 {
     font-family: $header-font;
 }
 
-h2 {
-    font-size: 36px;
-    font-weight: 700;
-    font-family: $header-font;
-    color: $primary-text;
-}
 
 h2 {
     font-size: 30px;
@@ -38,12 +32,11 @@ p {
     line-height: 28px;
 }
 
-i {
-    background: $orange;
-    color:$white;
-    border-radius: 50px;
-    padding:1rem;
-    margin-right: 1rem;
+
+/* headline margin bottom */ 
+
+.headline {
+    margin-bottom:60px;
 }
 
 /* Form control */
@@ -52,33 +45,45 @@ i {
     height: calc(3rem + 2px);
 }
 
-/* Colors */
-/* Gray */ 
-.gray-color {
-    background:$gray;
-}
-
-.darker-gray {
-    background:$darker-gray;
-}
-
 /* Padding section */ 
 
-.sec-pad {
+.section-padding {
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
-/* Subheading margin bottom */ 
-.mb-sh {
-    margin-bottom:30px;
-}
+
 
 /* join*/ 
+.main-header {
+    h1{
+    .color-teal{
+        color: $teal;
+    }
+    }
+ }
+
+.intro {
+    background: $gray;
+}
 
 .join {
     .bullets {
-    margin-top: 80px;}
+    margin-top: 80px;
+    i {
+        background: #ED8536;
+        border-radius: 50px;
+        color: #fff;
+        margin-top: 0px;
+        width: 43px;
+        height: 43px;
+        line-height: 36px;
+        padding-left: 13px;
+        padding-top: 3px;
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+}
 
     .d-flex {
     margin-bottom:.7rem;}
@@ -92,6 +97,7 @@ i {
 
 /* Testimonials */ 
 .testimonials {
+    background: $gray;
     .boxes {
         margin-top:40px;
     }
@@ -116,13 +122,36 @@ i {
     }
 }
 
+/* Hub Dashboard Page */ 
+
+.hub-boxes {
+    .headline {
+        margin-bottom: 50px;
+    }
+    .box-gray {
+    margin-bottom: 30px;
+ i {
+    padding: 20px;
+    background: $orange;
+    width: 100px;
+    height: 100px;
+    line-height: 56px;
+    padding-left: 25px;
+    border-radius: 50px;
+    color: $white;
+    margin-top: -10px;
+ }
+}
+}
+
 /* HELP THE EXPERTS PAGE */
 
 .experts {
     .card {
         border: 1px solid #EEEEEE;
+        height: 100%;
         .card-head{
-            padding:30px;
+            padding:30px 0;
             img {
                 width: 120px;
                 margin-bottom:10px;
@@ -132,6 +161,10 @@ i {
             }
         }
     }
+}
+
+.slack-join {
+    background: $gray;
 }
 
 /* Help the experts people profile */ 
@@ -160,6 +193,17 @@ i {
 }
 }
 
+.other-experts {
+    padding-bottom: 30px;
+    .boxes {
+        text-align:center;
+        img {
+            width: 120px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
 /* Discounts page */ 
 
 .discounts-intro {
@@ -171,7 +215,7 @@ i {
         -moz-appearance: none;
         text-indent: 1px;
         text-overflow: '';
-        margin-bottom:60px;
+        margin-bottom:100px;
     }
      .arrow-item {
             background-image:
@@ -214,8 +258,13 @@ i {
 .discounts-intro {
     .card {
         border: 0;
+        margin-bottom: 20px;
         .card-image {
             padding:20px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             img {
                 width:120px;
             }
@@ -225,4 +274,129 @@ i {
             margin-bottom:0;
         }
     }
+}
+
+
+/* Company Page */ 
+
+.company-content {
+    .box-gray {
+        margin-top: 100px;
+        h4 {
+            margin-bottom:2rem;
+        }
+    i {
+        margin-top: 4px;
+        margin-right: 1rem;
+        font-size: 20px;
+    }
+    .profile {
+        margin-bottom:30px;
+        img {
+            width:70px;
+            height: 70px;
+        }
+    .profile-name {
+        margin-top: 5px;
+        margin-left: 20px;
+    p {
+        margin-bottom:0;
+    }
+    }
+    }
+    }
+}
+
+/* Jargon Page */
+
+.jargon-content {
+    h3 {
+        font-size: 50px;
+        margin-top: 60px;
+    }
+}
+
+/* Business in a box page */ 
+
+.business-box {
+     background: $darker-gray;
+    .row {
+        margin-bottom:20px;
+
+     img {
+        width: inherit;
+        height: auto;
+    }
+    p {
+        text-align: center;
+        margin:20px auto;
+    }
+    h2 {
+    &:nth-child(2) {
+        margin-top: 50px;
+    }
+    }
+}
+}
+
+@media (max-width:767px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 21px;
+    }
+
+/* Home page join and testimonials */
+
+.join, .testimonials {
+    .row {
+    margin-bottom:0;
+    div {
+        margin-bottom: 20px;
+    }
+ }
+}
+
+/* Dashboard/HUB Page */
+
+.hub-boxes {
+    .box-gray {
+    margin-bottom: 10px;
+    padding: 30px 15px;
+ i {
+    padding: 20px;
+    background: #ED8536;
+    width: 80px;
+    height: 80px;
+    line-height: 34px;
+    padding-left: 20px;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: -10px;
+    font-size: 36px;
+ }
+}
+}
+
+/* Help the experts Page */
+
+.experts {
+    .card {
+        height: initial;
+        margin-bottom: 20px;
+    }
+}
+
+.slack-join {
+    .col-lg-6{
+    &:first-child {
+        margin-bottom: 40px;
+    }
+    }
+}
+
 }

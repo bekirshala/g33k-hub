@@ -2,6 +2,12 @@
 
 #footer {
     background: $footer;
+    .main-footer {
+        padding-top:30px;
+        padding-bottom:30px;
+        img {
+            width:130px;
+            }
     p {
         color: $footer-text;
         font-size: 12px;
@@ -12,17 +18,21 @@
         text-transform: initial;
     }
 }
-
-.main-footer {
-    padding-top:30px;
-    padding-bottom:30px;
-    img {
-    width:130px;
-    }
-}
-
 .sub-footer {
     background: $sub-footer;
-    padding-top: 10px;
-    padding-bottom:10px;
+    padding-top: 15px;
+    padding-bottom:15px;
+    p {
+        color:$white;
+        margin-bottom:0;
+        font-size: 14px;
+    }
+.social-media i {
+    color:$white;
+    margin-left: 40px;
+    font-size: 26px;
 }
+}
+}
+
+

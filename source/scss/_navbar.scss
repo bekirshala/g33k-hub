@@ -1,7 +1,17 @@
+.nav-wrapper{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 #main-menu {
     padding: 20px 15px;
     background-color: transparent;
-    #logo {
+    margin: 0 auto;
+    width: 1300px;
+      #logo {
         width: 150px;
     }
     .navbar-nav {
@@ -15,5 +25,15 @@
                 padding-left: .7rem;
             }
         }
+    }
+  
+}
+.scrolled {
+    background: #12b3c2 !important;
+    transition: 0.3s;
+    #logo {
+        margin-top: -15px;
+        margin-bottom: -15px;
+        width: 100px !important;
     }
 }
